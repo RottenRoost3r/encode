@@ -7,11 +7,17 @@ class TestYourEncoding < Minitest::Test
         assert_equal(1, 1)
     end
 
-    def test_that_returns_string
-    	assert_equal(String, funk.class)
+    # def test_that_returns_string
+    # 	assert_equal(String, funk.class)
+    # end
+
+    # def test_that_a_returns_f
+    # 	assert_equal(f, funk(a))
+    # end
+
+    def test_that_words_encrypt
+    	assert_equal("fgh", funk("abc"))
     end
 
-    def test_that_a_returns_f
-    	assert_equal(f, funk(a))
-    end
+    
 end
