@@ -1,7 +1,7 @@
 def funk(something)
-	something.tr('a-v', 'f-z')
+	something.tr('A-Za-z', 'F-ZA-Ef-za-e')
 end
 
 def bunk(more)
-	more.tr('f-z', 'a-v')
+	more.tr('F-ZA-Ef-za-e', 'A-Za-z')
 end
