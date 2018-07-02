@@ -19,5 +19,8 @@ class TestYourEncoding < Minitest::Test
     	assert_equal("fgh", funk("abc"))
     end
 
+    def test_that_words_decrypt
+    	assert_equal("abc", bunk("fgh"))
+    end
     
 end
