@@ -1,3 +1,3 @@
-def funk()
+def funk(something)
 	""
 end

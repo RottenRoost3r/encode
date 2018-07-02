@@ -11,4 +11,7 @@ class TestYourEncoding < Minitest::Test
     	assert_equal(String, funk.class)
     end
 
+    def test_that_a_returns_f
+    	assert_equal(f, funk(a))
+    end
 end
