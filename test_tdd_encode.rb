@@ -7,4 +7,8 @@ class TestYourEncoding < Minitest::Test
         assert_equal(1, 1)
     end
 
+    def test_that_returns_string
+    	assert_equal(String, funk.class)
+    end
+
 end
