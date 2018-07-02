@@ -3,5 +3,5 @@ def funk(something)
 end
 
 def bunk(more)
-	more.tr()
+	more.tr('f-z', 'a-v')
 end
