@@ -19,6 +19,10 @@ class TestYourEncoding < Minitest::Test
     def test_assert_that_converter_works_inside_encoder
     	assert_equal(["0", "1", "2"], encoder("012"))
     end
+
+    def test_that_converter_takes_spaces
+    	assert_equal(["h", "e" ,"l", "l", "o", " ", "w", "o", "r", "l", "d"], converter("hello world"))
+    end
     # def test_assert_that_string_is_converted
     # 	assert_equal(Array, ("").class)
     # end
