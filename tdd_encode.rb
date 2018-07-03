@@ -25,5 +25,5 @@ def converter(input)
 end
 
 def encoder(input)
-	
+	converter(input)
 end
