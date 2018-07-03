@@ -20,5 +20,9 @@
 # 	end
 # end
 
+def converter(input)
+	work_arr = input.split("")
+end
+
 def encoder(input)
 end
