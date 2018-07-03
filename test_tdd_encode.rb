@@ -14,6 +14,11 @@ class TestYourEncoding < Minitest::Test
     def test_assert_that_converter_converts
     	assert_equal(["0", "1", "2"], converter("012"))
     end
+
+
+    def test_assert_that_converter_works_inside_encoder
+    	assert_equal(["0", "1", "2"], encoder("012"))
+    end
     # def test_assert_that_string_is_converted
     # 	assert_equal(Array, ("").class)
     # end
