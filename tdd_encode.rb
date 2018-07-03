@@ -7,6 +7,6 @@
 # end
 
 def funk(something)
-	
+	something.split("")
 		
 	end
