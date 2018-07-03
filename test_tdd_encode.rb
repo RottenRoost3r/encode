@@ -7,8 +7,12 @@ class TestYourEncoding < Minitest::Test
         assert_equal(1, 1)
     end
 
-    def test_assert_that_converter_converts
+    def test_assert_that_converter_returns_array
     	assert_equal(Array, converter("").class)
+    end
+
+    def test_assert_that_converter_converts
+    	assert_equal(["0", "1", "2"], converter("012"))
     end
     # def test_assert_that_string_is_converted
     # 	assert_equal(Array, ("").class)
