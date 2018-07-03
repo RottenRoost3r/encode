@@ -6,7 +6,19 @@
 # 	more.tr('F-ZA-Ef-za-e', 'A-Za-z')
 # end
 
-def funk(something)
-	something.split("")
-		
-	end
+# def input_an_arry(new_arr)
+# 	if new_arr.class = Array
+# 		true
+# 	end
+# end
+
+# def funk(something)
+# 	main_arr = [*"a".."z"]
+# 	new_arr = something.split("")
+# 	if input_an_arry(new_arr) == true
+
+# 	end
+# end
+
+def encoder(input)
+end

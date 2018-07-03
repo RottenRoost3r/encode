@@ -7,9 +7,11 @@ class TestYourEncoding < Minitest::Test
         assert_equal(1, 1)
     end
 
-    def test_assert_that_funk_returns_array
-    	assert_equal(Array, funk("").class)
-    end
+    # def test_assert_that_string_is_converted
+    # 	assert_equal(Array, ("").class)
+    # end
+
+    
     # def test_that_a_returns_f
     # 	assert_equal("f", funk("a"))
     # end
