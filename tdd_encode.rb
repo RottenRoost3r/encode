@@ -7,3 +7,10 @@
 # end
 
 
+def encoder(something)
+	arry = something.split("")
+	arry.map do |x|
+		ord_var = x.ord + 5
+		ord_var.chr
+	end
+end
