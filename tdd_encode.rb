@@ -8,6 +8,7 @@
 
 
 def encoder(something)
+	new_var = ""
 	arry = something.split("")
 	arry.map do |x|
 		ord_var = x.ord + 5

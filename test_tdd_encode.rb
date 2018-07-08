@@ -7,8 +7,7 @@ class TestYourEncoding < Minitest::Test
         assert_equal(1, 1)
     end
 
-  	def test_that_who_cares
-    	assert_equal(["f", "g", "h"], encoder("abc"))
+  	def test_that_message_was_converted
+    	assert_equal("fgh", encoder("abc"))
     end
-
 end
