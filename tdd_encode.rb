@@ -16,3 +16,7 @@ def encoder(something)
 	end
 	new_var
 end
+
+def decoder(something)
+
+end
