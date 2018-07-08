@@ -18,5 +18,11 @@ def encoder(something)
 end
 
 def decoder(something)
-
+	new_var = ""
+	arry = something.split("")
+	arry.map do |x|
+		ord_var = x.ord - 5
+		new_var += ord_var.chr
+	end
+	new_var
 end
