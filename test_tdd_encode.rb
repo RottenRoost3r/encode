@@ -10,4 +10,8 @@ class TestYourEncoding < Minitest::Test
   	def test_that_message_was_converted
     	assert_equal("fgh", encoder("abc"))
     end
+
+    def test_that_caps_too
+    	assert_equal("FGH", encoder("ABC"))
+    end
 end
