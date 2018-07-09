@@ -29,3 +29,7 @@
 def stringy()
 	""
 end
+
+def prepare(message)
+end
+

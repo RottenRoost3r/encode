@@ -28,5 +28,9 @@ class TestYourEncoding < Minitest::Test
    #  end
    def test_that_result_is_string
    		assert_equal(String, stringy().class)
-   	end
+   end
+
+   def test_that_message_is_prepared
+   		assert_equal("muffinman", prepare("Muffin Man"))
+   end
 end
