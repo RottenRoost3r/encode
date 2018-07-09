@@ -60,6 +60,20 @@ def indexed_message(message)
 	indexed_message_arr
 end
 
+def indexed_encrypted_message(message)
+	indexed_encrypted_message_arr = []
+	convert(message).each do |letters|
+		counter = 0
+		atoe().each do |letters_1|
+			if letters == letters_1
+				indexed_encrypted_message_arr << counter
+			end
+			counter += 1
+		end
+	end
+	indexed_encrypted_message_arr
+end
+
 def encrypter(message)
 	encrypted_arr = []
 	indexed_message(message).each do |num|

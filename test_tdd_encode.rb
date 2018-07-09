@@ -54,6 +54,10 @@ class TestYourEncoding < Minitest::Test
    		assert_equal([0, 1, 2], indexed_message("abc"))
    	end
 
+   	def test_assert_decrypted_message_returns_as_indexed_array
+	 	assert_equal([8, 3, 8, 18, 11, 8, 10, 4, 18, 4, 2, 17, 4, 19, 2, 14, 3, 4, 18], indexed_encrypted_message("ninxqnpjxjhwjyhtijx"))
+	end
+
 	def test_assert_indexed_message_returns_as_encrypted_secret_code
 		assert_equal("e", encrypter("z"))
 		assert_equal("f", encrypter("a"))
