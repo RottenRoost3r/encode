@@ -84,3 +84,15 @@ def encrypter(message)
 	end
 	encrypted_arr.join
 end
+
+def decrypter(message)
+	decrypted_arr = []
+	indexed_encrypted_message(message).each do |num|
+		if num == atoz.index
+			atoz[num]
+		end
+		decrypted_arr << atoz[num]
+	end
+	decrypted_arr.join
+end
+

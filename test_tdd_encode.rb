@@ -63,4 +63,10 @@ class TestYourEncoding < Minitest::Test
 		assert_equal("f", encrypter("a"))
 		assert_equal("fghf", encrypter("abc!..>A"))
 	end
+
+	def test_assert_message_decrypts
+		assert_equal("a", decrypter("f"))
+		assert_equal("z", decrypter("e"))
+		assert_equal("abca", decrypter("fghf"))
+	end
 end
