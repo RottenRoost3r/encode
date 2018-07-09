@@ -27,4 +27,5 @@
 # 	new_var
 # end
 def stringy()
+	""
 end
