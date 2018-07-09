@@ -34,6 +34,10 @@ def prepare(message)
 	message.downcase.gsub(/[^a-zA-Z0-9]/i, "")
 end
 
+def convert(message)
+	prepare(message).split("")
+end
+
 def atoz()
 	atoz = [*"a".."z"]
 end

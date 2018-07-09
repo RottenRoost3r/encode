@@ -36,6 +36,12 @@ class TestYourEncoding < Minitest::Test
    		assert_equal("muffinman", prepare("Muffin Man!...?"))
    	end
 
+   	def test_that_message_is_converted
+   		assert_equal(["m", "u", "f", "f", "i", "n", "m", "a", "n"], convert("MuffinMan"))
+   		assert_equal(["m", "u", "f", "f", "i", "n", "m", "a", "n"], convert("Muffin Man"))
+   		assert_equal(["m", "u", "f", "f", "i", "n", "m", "a", "n"], convert("Muffin Man!...?"))
+   	end
+
    	def test_that_atoz_is_array
    		assert_equal(Array, atoz().class)
    	end
