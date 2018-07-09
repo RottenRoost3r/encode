@@ -34,6 +34,9 @@ class TestYourEncoding < Minitest::Test
    		assert_equal("muffinman", prepare("MuffinMan"))
    		assert_equal("muffinman", prepare("Muffin Man"))
    		assert_equal("muffinman", prepare("Muffin Man!...?"))
+   	end
 
-   end
+   	def test_that_atoz_is_array
+   		assert_equal(Array, atoz().class)
+   	end
 end
