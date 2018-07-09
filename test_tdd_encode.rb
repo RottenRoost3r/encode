@@ -49,4 +49,8 @@ class TestYourEncoding < Minitest::Test
    	def test_that_atoz_rotates
    		assert_equal(["f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "a", "b", "c", "d", "e"], atoe())
    	end
+
+   	def test_that_message_is_indexed
+   		assert_equal([1, 2, 3], indexed_message("abc"))
+   	end
 end

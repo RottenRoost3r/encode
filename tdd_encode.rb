@@ -45,3 +45,6 @@ end
 def atoe()
 	atoz.rotate(5)
 end
+
+def indexed_message(message)
+end
