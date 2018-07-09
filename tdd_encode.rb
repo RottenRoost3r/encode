@@ -35,4 +35,5 @@ def prepare(message)
 end
 
 def atoz()
+	atoz = [*"a".."z"]
 end
