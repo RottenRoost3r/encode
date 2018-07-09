@@ -32,5 +32,7 @@ class TestYourEncoding < Minitest::Test
 
    def test_that_message_is_prepared
    		assert_equal("muffinman", prepare("Muffin Man"))
+   		assert_equal("muffinman", prepare("Muffin Man!...?"))
+
    end
 end
