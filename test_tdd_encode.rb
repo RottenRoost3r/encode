@@ -51,6 +51,6 @@ class TestYourEncoding < Minitest::Test
    	end
 
    	def test_that_message_is_indexed
-   		assert_equal([1, 2, 3], indexed_message("abc"))
+   		assert_equal([0, 1, 2], indexed_message("abc"))
    	end
 end
