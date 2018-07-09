@@ -39,4 +39,8 @@ class TestYourEncoding < Minitest::Test
    	def test_that_atoz_is_array
    		assert_equal(Array, atoz().class)
    	end
+
+   	def test_that_atoz_rotates
+   		assert_equal(["f", "g", "h"], atoe("abc"))
+   	end
 end

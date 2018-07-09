@@ -37,3 +37,6 @@ end
 def atoz()
 	atoz = [*"a".."z"]
 end
+
+def atoe()
+end
