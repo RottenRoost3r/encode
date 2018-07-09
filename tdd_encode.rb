@@ -31,5 +31,6 @@ def stringy()
 end
 
 def prepare(message)
+	message.downcase.gsub(/[^a-zA-Z0-9]/i, "")
 end
 
