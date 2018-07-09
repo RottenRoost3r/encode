@@ -59,3 +59,6 @@ def indexed_message(message)
 	end
 	indexed_message_arr
 end
+
+def encrypter(message)
+end
